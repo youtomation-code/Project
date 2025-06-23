@@ -1,22 +1,21 @@
-# Project
+# Project 
 services:
   - type: web
     name: n8n
     env: node
-    repo: https://github.com/youtomation/n8n
-    branch: master
     buildCommand: yarn build
     startCommand: yarn start
+    plan: free
     envVars:
       - key: N8N_BASIC_AUTH_ACTIVE
         value: 'true'
       - key: N8N_BASIC_AUTH_USER
         value: admin
       - key: N8N_BASIC_AUTH_PASSWORD
-        value: yourpassword123
+        value: nakul_776
       - key: N8N_HOST
         value: 0.0.0.0
       - key: N8N_PORT
-        value: 10000
+        value: 5678
       - key: NODE_ENV
         value: production
