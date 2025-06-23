@@ -2,7 +2,7 @@ services:
   - type: web
     name: n8n
     env: node
-    repo: https://github.com/YOUR_USERNAME/n8n
+    repo: https://github.com/youtomation/n8n
     branch: master
     buildCommand: yarn build
     startCommand: yarn start
